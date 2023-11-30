@@ -1,8 +1,10 @@
 import React from "react";
-import EmployeePage from "./EmployeeHomePage";
+import Header from "./Header";
 
-EmployeePage = (employees) => {
-  return <div>Employee Page</div>;
-};
-
-export default EmployeePage;
+export default function EmployeePage() {
+  return (
+    <div className="right-side">
+      <Header className="right-header" title="Employee" />
+    </div>
+  );
+}

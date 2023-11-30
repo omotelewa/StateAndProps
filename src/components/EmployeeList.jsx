@@ -1,35 +1,46 @@
 import React from "react";
-import EmployeeList from "./EmployeeListItem";
+import EmployeeListItems from "./EmployeeListItems";
 import data from "../models/data";
 
 export default function EmployeeList() {
   return (
-    <div>
-      <div className="employee-list">
-        <EmployeeListItem
-          src={data["employee1"]["photo"]}
+    <>
+      <div className="employeesList">
+        <EmployeeListItems
+          src={data["employee1"]["image"]}
           Name={data["employee1"]["name"]}
-          title={data["employee1"]["title"]}
+          position={data["employee1"]["title"]}
         />
 
-        <EmployeeListItem
-          src={data["employee2"]["photo"]}
+        <EmployeeListItems
+          src={data["employee2"]["image"]}
           Name={data["employee2"]["name"]}
-          title={data["employee2"]["title"]}
+          position={data["employee2"]["title"]}
         />
 
-        <EmployeeListItem
-          src={data["employee3"]["photo"]}
+        <EmployeeListItems
+          src={data["employee3"]["image"]}
           Name={data["employee3"]["name"]}
-          title={data["employee3"]["title"]}
+          position={data["employee3"]["title"]}
         />
 
-        <EmployeeListItem
-          src={data["employee4"]["photo"]}
+        <EmployeeListItems
+          src={data["employee4"]["image"]}
           Name={data["employee4"]["name"]}
-          title={data["employee4"]["title"]}
+          position={data["employee4"]["title"]}
+        />
+        <EmployeeListItems
+          src={data["employee5"]["image"]}
+          Name={data["employee5"]["name"]}
+          position={data["employee5"]["title"]}
+        />
+
+        <EmployeeListItems
+          src={data["employee6"]["image"]}
+          Name={data["employee6"]["name"]}
+          position={data["employee6"]["title"]}
         />
       </div>
-    </div>
+    </>
   );
 }

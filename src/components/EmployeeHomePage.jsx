@@ -4,9 +4,7 @@ import Header from "./Header";
 export const EmployeeHomePage = () => {
   return (
     <div className="right side">
-      <Header className="right-header" title="Employee" />
+      <Header className="right-header" title="Employees" />
     </div>
   );
 };
-
-export default EmployeeHomePage;
